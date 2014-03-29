@@ -480,6 +480,12 @@ b{
  width: 100%;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .col-1{
   width: 8.33333333%;
   float: left;
