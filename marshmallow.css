@@ -480,7 +480,7 @@ b{
  width: 100%;
 }
 
-.group:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
