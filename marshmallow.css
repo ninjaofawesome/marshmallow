@@ -239,8 +239,8 @@ samp {
   font-size: 1em;
 }
 
-/* Forms
-   ========================================================================== */
+ Forms
+   ========================================================================== 
 
 /**
  * Known limitation: by default, Chrome and Safari on OS X allow very limited
@@ -447,6 +447,7 @@ body {
   font-size: 1.5em;
   line-height: 1em;
   font-weight: 300;
+  display: table;
 
 }
 
@@ -470,122 +471,470 @@ b{
 /*Spacing*/
 
 .container {
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  zoom:1; /* For IE 6/7 */
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  content:"";
+  display:table;
 }
+
+.container:before
+.container:after {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+  content:"";
+  display:table;
+}
+
 
 .row {
  width: 100%;
  min-height: 1%;
 }
 
+.row:before,
+.row:after {
+  content:"";
+  display:table;
+}
+.row:after {
+  clear:both;
+}
+
 .col-1{
   width: 8.33333333%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-2{
   width: 16.66666667%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-3 {
   width: 25%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-4{
   width: 33.33333333%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-5{
   width: 41.66666667%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-6{
   width: 50%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-7{
   width: 58.33333333%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-8{
   width: 66.66666667%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-9{
   width: 75%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-10{
   width: 83.33333333%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-11{
   width: 91.66666667%;
   display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 .col-12{
   width: 100%;
   display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+/*Words*/
+
+h1,h2,h3,h4,h5,h6 {
+  display: inline-block;
+  font-weight: 900;
+  font-family: inherit;
+  color: inherit;
+}
+
+h1{
+  font-size: 2.250em;
+  line-height: 1.05em;
+}
+
+h2{
+  font-size: 1.875em;
+  line-height: 1.05em;
+}
+
+h3{
+  font-size: 1.500em;
+  line-height: 1.05em;
+}
+
+h4{
+  font-size: 1.125em;
+  line-height: 1.05em;
+}
+
+h5{
+  font-size: .875em;
+  line-height:1.05em;
+}
+
+h6{
+  font-size: .750em;
+  line-height: 1.05em;
+}
+
+p{
+  font-size: .875em;
+}
+
+
+
+/*======================================================================
+SMARTPHONES SMARTPHONES SMARTPHONES SMARTPHONES SMARTPHONES SMARTPHONES 
+========================================================================
+*/
+
+/*GENERAL*/
+@media only screen and (min-device-width : 240px) and (max-device-width : 568px) {
+
+.container {
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  /*width: 34.250em;*/
+  
+} 
+
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
   min-height: 1%;
 }
 
 
 
-
-/*=================================================================================
-LARGE SCREENS LARGE SCREENS LARGE SCREENS LARGE SCREENS LARGE SCREENS LARGE SCREENS
-===================================================================================
-*/
-
-@media only screen 
-and (min-width : 1824px) {
-
-.container{
-  width: 1804px;
 }
 
-
-
-}
-
-
-
-/*==============================================================================
-DESKTOP SCREENS DESKTOP SCREENS DESKTOP SCREENS DESKTOP SCREENS DESKTOP SCREENS 
-================================================================================
-*/
-
-@media only screen 
-and (min-width : 1224px) {
+/*PORTRAIT*/
+@media only screen and (min-device-width : 240px) {
 
 .container {
-  width: 1204px;
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  width: 220px;
 }
 
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+  
+}  
+
+
+
+
+/*LANDSCAPE*/
+@media only screen and (min-device-width : 320px) {
+
+.container {
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  width: 300px;
+  
+} 
+
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
 
 
 }
@@ -596,84 +945,521 @@ TABLET SCREENS TABLET SCREENS TABLET SCREENS TABLET SCREENS TABLET SCREENS
 */
 
 /*GENERAL*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 .container {
-  min-width: 748px;
-  max-width: 1004px;
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  width: 1004px;
+
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
 }
 
-
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
 }
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+  
+} 
 
 /*PORTRAIT*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
 
 .container {
-  min-width: 748px;
-  max-width: 1004px;
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  width: 748px;
+  
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
 }
+
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+} 
 
 
 }
 
 /*LANDSCAPE*/
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
 
 .container {
-  min-width: 748px;
-  max-width: 1004px;
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  width: 1004px;
+  
+} 
+
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
 }
 
 
+
 }
 
 
-/*======================================================================
-SMARTPHONES SMARTPHONES SMARTPHONES SMARTPHONES SMARTPHONES SMARTPHONES 
-========================================================================
+
+}
+
+/*==============================================================================
+DESKTOP SCREENS DESKTOP SCREENS DESKTOP SCREENS DESKTOP SCREENS DESKTOP SCREENS 
+================================================================================
 */
 
-/*GENERAL*/
-@media only screen 
-and (min-device-width : 240px) 
-and (max-device-width : 568px) {
-
+@media (min-width : 1224px) {
 .container {
-  min-width: 220px;
-  max-width: 548px;
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  width: 1204px;
+  
+}
+
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
 }
 
 
 }
 
-/*PORTRAIT*/
-@media only screen 
-and (min-device-width : 240px) {
 
+/*=================================================================================
+LARGE SCREENS LARGE SCREENS LARGE SCREENS LARGE SCREENS LARGE SCREENS LARGE SCREENS
+===================================================================================
+*/
+
+@media only screen and (min-width : 1824px) {
 .container {
-  width: 220px;
+  padding-right: 0.625em;
+  padding-left: 0.625em;
+  margin-left: 0.625em;
+  margin-right: 0.625em;
+  display: table;
+  width: 1804px;
+  
+}
+
+.col-1{
+  width: 8.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-2{
+  width: 16.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-3 {
+  width: 25%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-4{
+  width: 33.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-5{
+  width: 41.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-6{
+  width: 50%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-7{
+  width: 58.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-8{
+  width: 66.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-9{
+  width: 75%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-10{
+  width: 83.33333333%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-11{
+  width: 91.66666667%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
+}
+
+.col-12{
+  width: 100%;
+  display: inline-block;
+  float: left;
+  min-height: 1%;
 }
 
 }
 
-/*LANDSCAPE*/
-@media only screen 
-and (min-device-width : 320px) {
-.container {
-  width: 300px;
-}
 
 
-}
+
+
+
+
+
+
+
+
 
 
 
