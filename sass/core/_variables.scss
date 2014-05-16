@@ -1,0 +1,41 @@
+/* FROM CORE/VARIABLES */
+
+//Here you can add in any variables that will be used throughout your project.
+//For more information on how to do that, pls visit http://sass-lang.com/guide
+//XO, Marshmallow
+
+// MEASUREMENTS
+$full-width: 100%;
+$three-quarters-width: 75%;
+$half-width: 50%;
+$quarter-width: 25%;
+
+
+//DEVICE BREAKPOINTS
+$mobile-min: 240px;
+$mobile-max: 480px;
+$mini-tablet-min: 481px;
+$mini-tablet-max: 767px;
+$tablet-min: 768px;
+$tablet-max: 1023px;
+$desktop-min: 1024px;
+
+//iphone breakpoints
+$iphone-min: 320px;
+$iphone-max: 568px;
+
+//vendor specific breakpoints
+
+
+//PADDING AND MARGINS
+$standard-margin: 0 10px;
+$standard-padding: 0px 15px;
+
+//tablet device
+$tablet-margin: 0 5px;
+
+
+
+
+
+

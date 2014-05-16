@@ -1,0 +1,39 @@
+/* FROM CORE/GRID */
+
+/* Basic grid, for desktop and large screen views */
+@media only screen and (min-device-width: $desktop-min){
+
+.row {
+  width: $full-width;
+  min-height: 1%;
+  margin: $standard-margin;
+  padding: $standard-padding;
+}
+
+}
+
+/* Tablet view, all sizes */
+
+@media only screen and (min-device-width: $mini-tablet-min) and (max-device-width: $tablet-max){
+
+.row {
+  width: $full-width;
+  min-height: 1%;
+  margin: $tablet-margin;
+  padding: $standard-padding;
+}
+
+}
+
+/* Mobile view, all sizes */
+
+@media only screen and (min-device-width: $mobile-min) and (max-device-width: $mobile-max){
+
+.row {
+  width: $full-width;
+  min-height: 1%;
+  margin: none;
+  padding: none;
+}
+
+}
