@@ -29,11 +29,13 @@ $iphone-max: 568px;
 
 
 //PADDING AND MARGINS
-$standard-margin: 0 10px;
+$standard-margin: 0 auto;
 $standard-padding: 0px 15px;
 
 //tablet device
 $tablet-margin: 0 5px;
+
+$desktop: "only screen and (min-device-width: 1024px) and (max-device-width: 1224px)"
 
 
 

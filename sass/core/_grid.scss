@@ -1,12 +1,18 @@
-/* FROM CORE/GRID */
 
-/* Basic grid, for desktop and large screen views */
-@media only screen and (min-device-width: $desktop-min) and (max-device-width: $desktop-max){
+//@media  only screen and (min-device-width: $desktop-min) and (max-device-width: $desktop-max){
 
 .container {
-  width: $full-width;
+  background-color: blue;
   margin: $standard-margin;
   padding: $standard-padding;
+
+  @media screen and (min-width: $mini-tablet-min) and (max-width: $tablet-max){
+    background-color: yellow;
+  }
+
+  @media screen and (min-width: $mobile-min) and (max-width: $mobile-max){
+    background-color: orange;
+  }
 }
 
 .full-container {
@@ -17,59 +23,10 @@
 
 
 .row {
+  background-color: green;
+  width: $desktop-max;
   min-height: 1%;
   margin: $standard-margin;
   padding: $standard-padding;
 }
 
-}
-
-/* Tablet view, all sizes */
-@media only screen and (min-device-width: $mini-tablet-min) and (max-device-width: $tablet-max){
-
-.container {
-  width: $full-width;
-  margin: $standard-margin;
-  padding: $standard-padding;
-}
-
-.full-container {
-  width: $full-width;
-  margin: none;
-  padding: none;
-}
-
-.row {
-  width: $full-width;
-  min-height: 1%;
-  margin: $tablet-margin;
-  padding: $standard-padding;
-}
-
-}
-
-/* Mobile view, all sizes */
-
-@media only screen and (min-device-width: $mobile-min) and (max-device-width: $mobile-max){
-
-
-.container {
-  width: $full-width;
-  margin: $standard-margin;
-  padding: $standard-padding;
-}
-
-.full-container {
-  width: $full-width;
-  margin: none;
-  padding: none;
-}
-
-.row {
-  width: $full-width;
-  min-height: 1%;
-  margin: none;
-  padding: none;
-}
-
-}

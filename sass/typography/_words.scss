@@ -3,14 +3,15 @@
 //Check the normalize file for styles that may override yours.
 //XO, Marshmallow
 
-/* Basic typography, for desktop and large screen views */
-@media only screen and (min-device-width: $desktop-min) and (max-device-width: $desktop-max) {
+// /* Basic typography, for desktop and large screen views */
+// @media only screen and (min-device-width: $desktop-min) and (max-device-width: $desktop-max) {
 
   p {
+    color: red;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.4em;
   }
 
-}
+// }
 

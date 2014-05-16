@@ -2,53 +2,6 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
-
-html {
-  line-height: 1; }
-
-ol, ul {
-  list-style: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
-
-q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
-
-a img {
-  border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
-
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -407,61 +360,32 @@ th {
 
 /* FROM CORE/VARIABLES */
 /* FROM CORE/MIXINS */
-/* FROM CORE/GRID */
-/* Basic grid, for desktop and large screen views */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
-  .container {
-    width: 100%;
-    margin: 0 10px;
-    padding: 0px 15px; }
+.container {
+  background-color: blue;
+  margin: 0 auto;
+  padding: 0px 15px; }
+  @media screen and (min-width: 481px) and (max-width: 1023px) {
+    .container {
+      background-color: yellow; } }
+  @media screen and (min-width: 240px) and (max-width: 480px) {
+    .container {
+      background-color: orange; } }
 
-  .full-container {
-    width: 100%;
-    margin: none;
-    padding: none; }
+.full-container {
+  width: 100%;
+  margin: none;
+  padding: none; }
 
-  .row {
-    min-height: 1%;
-    margin: 0 10px;
-    padding: 0px 15px; } }
-/* Tablet view, all sizes */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
-  .container {
-    width: 100%;
-    margin: 0 10px;
-    padding: 0px 15px; }
+.row {
+  background-color: green;
+  width: 1224px;
+  min-height: 1%;
+  margin: 0 auto;
+  padding: 0px 15px; }
 
-  .full-container {
-    width: 100%;
-    margin: none;
-    padding: none; }
-
-  .row {
-    width: 100%;
-    min-height: 1%;
-    margin: 0 5px;
-    padding: 0px 15px; } }
-/* Mobile view, all sizes */
-@media only screen and (min-device-width: 240px) and (max-device-width: 480px) {
-  .container {
-    width: 100%;
-    margin: 0 10px;
-    padding: 0px 15px; }
-
-  .full-container {
-    width: 100%;
-    margin: none;
-    padding: none; }
-
-  .row {
-    width: 100%;
-    min-height: 1%;
-    margin: none;
-    padding: none; } }
 /* FROM TYPOGRAPHY/WORDS */
-/* Basic typography, for desktop and large screen views */
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
-  p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.4em; } }
+p {
+  color: red;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.4em; }
