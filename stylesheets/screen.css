@@ -409,14 +409,33 @@ th {
 /* FROM CORE/MIXINS */
 /* FROM CORE/GRID */
 /* Basic grid, for desktop and large screen views */
-@media only screen and (min-device-width: 1024px) {
-  .row {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
+  .container {
     width: 100%;
+    margin: 0 10px;
+    padding: 0px 15px; }
+
+  .full-container {
+    width: 100%;
+    margin: none;
+    padding: none; }
+
+  .row {
     min-height: 1%;
     margin: 0 10px;
     padding: 0px 15px; } }
 /* Tablet view, all sizes */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1023px) {
+  .container {
+    width: 100%;
+    margin: 0 10px;
+    padding: 0px 15px; }
+
+  .full-container {
+    width: 100%;
+    margin: none;
+    padding: none; }
+
   .row {
     width: 100%;
     min-height: 1%;
@@ -424,8 +443,25 @@ th {
     padding: 0px 15px; } }
 /* Mobile view, all sizes */
 @media only screen and (min-device-width: 240px) and (max-device-width: 480px) {
+  .container {
+    width: 100%;
+    margin: 0 10px;
+    padding: 0px 15px; }
+
+  .full-container {
+    width: 100%;
+    margin: none;
+    padding: none; }
+
   .row {
     width: 100%;
     min-height: 1%;
     margin: none;
     padding: none; } }
+/* FROM TYPOGRAPHY/WORDS */
+/* Basic typography, for desktop and large screen views */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1224px) {
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4em; } }

@@ -1,10 +1,22 @@
 /* FROM CORE/GRID */
 
 /* Basic grid, for desktop and large screen views */
-@media only screen and (min-device-width: $desktop-min){
+@media only screen and (min-device-width: $desktop-min) and (max-device-width: $desktop-max){
+
+.container {
+  width: $full-width;
+  margin: $standard-margin;
+  padding: $standard-padding;
+}
+
+.full-container {
+  width: $full-width;
+  margin: none;
+  padding: none;
+}
+
 
 .row {
-  width: $full-width;
   min-height: 1%;
   margin: $standard-margin;
   padding: $standard-padding;
@@ -13,8 +25,19 @@
 }
 
 /* Tablet view, all sizes */
-
 @media only screen and (min-device-width: $mini-tablet-min) and (max-device-width: $tablet-max){
+
+.container {
+  width: $full-width;
+  margin: $standard-margin;
+  padding: $standard-padding;
+}
+
+.full-container {
+  width: $full-width;
+  margin: none;
+  padding: none;
+}
 
 .row {
   width: $full-width;
@@ -28,6 +51,19 @@
 /* Mobile view, all sizes */
 
 @media only screen and (min-device-width: $mobile-min) and (max-device-width: $mobile-max){
+
+
+.container {
+  width: $full-width;
+  margin: $standard-margin;
+  padding: $standard-padding;
+}
+
+.full-container {
+  width: $full-width;
+  margin: none;
+  padding: none;
+}
 
 .row {
   width: $full-width;
